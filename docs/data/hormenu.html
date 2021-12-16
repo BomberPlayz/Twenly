@@ -1,0 +1,134 @@
+<h1>Horizontal menus</h1>
+<h2>With Twenly's horizontal menus, you can easily create navbars, simple menus, etc!</h2>
+<h3>To create a horizontal menu, you simply have to add the classes "ui menu" to a div.</h3>
+<div class="ui message warning">
+    <strong>Attention! </strong>Menus (both horizontal and vertical) use the "item" class in them, and not the "content" class!
+</div>
+<div class="ui card" style="width: 100%">
+    <div class="title">Example</div>
+    <div class="content">
+        <div class="ui menu">
+            <div class="item left">
+                <button class="ui button primary">My projects</button>
+            </div>
+            <div class="item left">
+                <button class="ui button primary">New project</button>
+            </div>
+
+            <a href="#" class="item hover box">
+                Log-in
+            </a>
+            <a href="#" class="item active">
+                About us
+            </a>
+
+            <div class="item right">
+                <input type="text" placeholder="search..."></input>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <pre class="card ui" style="width: 100%;"><code class="language-html">
+&lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;ui menu&quot;&gt;
+        &lt;div class=&quot;item left&quot;&gt;
+            &lt;button class=&quot;ui button primary&quot;&gt;My projects&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;item left&quot;&gt;
+            &lt;button class=&quot;ui button primary&quot;&gt;New project&lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;
+            Log-in
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;item active&quot;&gt;
+            About us
+        &lt;/a&gt;
+
+        &lt;div class=&quot;item right&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;search...&quot;&gt;&lt;/input&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+
+
+    </div>
+
+
+</div>
+<h2>You can also put horizontal menus into itself.</h2>
+<h2>With this, you can make cool, rounded sections of a horzontal menu, or have multiple active items, without the possibility of causing bugs.</h2>
+<div class="ui card" style="width: 100%">
+    <div class="title">Example</div>
+    <div class="content">
+        <div class="ui menu">
+            <div class="item left">
+                <button class="ui button primary">My projects</button>
+            </div>
+            <div class="item left">
+                <button class="ui button primary">New project</button>
+            </div>
+
+            <a href="#" class="item hover box">
+                Log-in
+            </a>
+            <a href="#" class="item active">
+                About us
+            </a>
+
+            <div class="ui menu right rounded">
+                <a href="#" class="item active">
+                    Search projects
+                </a>
+                <a href="#" class="item">
+                    Search assets
+                </a>
+                <div class="item right">
+                    <button class="ui button primary">Log-out</button>
+                </div>
+                <div class="item right">
+                    <input type="text" placeholder="search..."></input>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <pre class="card ui" style="width: 100%"><code class="language-html">
+&lt;div class=&quot;ui menu&quot;&gt;
+    &lt;div class=&quot;item left&quot;&gt;
+        &lt;button class=&quot;ui button primary&quot;&gt;My projects&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item left&quot;&gt;
+        &lt;button class=&quot;ui button primary&quot;&gt;New project&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;a href=&quot;#&quot; class=&quot;item hover box&quot;&gt;
+        Log-in
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;item active&quot;&gt;
+        About us
+    &lt;/a&gt;
+
+    &lt;div class=&quot;ui menu right rounded&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;item active&quot;&gt;
+            Search projects
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;item&quot;&gt;
+            Search assets
+        &lt;/a&gt;
+        &lt;div class=&quot;item right&quot;&gt;
+            &lt;button class=&quot;ui button primary&quot;&gt;Log-out&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;item right&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;search...&quot;&gt;&lt;/input&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+
+
+    </div>
+
+
+</div>

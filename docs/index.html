@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twenly Docs</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="/Twenly/main.css">
+
+
+
+</head>
+<body style="overflow: auto" class="werr">
+
+
+
+
+
+
+
+
+
+
+<div class="" style="display: flex; width: available; width: -moz-available;">
+    <div class="ui menu vertical compact sticky" style="width: 15%; max-height: 650px">
+        <div class="title">
+            Twenly docs
+        </div>
+        <div class="item">
+            <div class="ui header">Get Started</div>
+            <a class="box hover" href="?comp=get">Use in your website!</a>
+        </div>
+        <div class="item">
+            <div class="ui header">Components</div>
+            <a class="box hover take right" href="?comp=buttons">Buttons</a>
+            <a class="box hover take right" href="?comp=cards">Cards</a>
+            <a class="box hover take right" href="?comp=toast">Toast</a>
+            <a class="box hover take right" href="?comp=hormenu">Horizontal Menu</a>
+            <a class="box hover take right" href="?comp=vermenu">Vertical Menu</a>
+            <a class="box hover take right" href="?comp=message">Message</a>
+            <a class="box hover take right" href="?comp=badge">Badge</a>
+            <a class="box hover take right" href="?comp=placeholder">Placeholder</a>
+            <a class="box hover take right" href="?comp=progressbar">Progress bar</a>
+        </div>
+        <div class="item">
+            <div class="ui header">Containers</div>
+            <a class="box hover take right" href="?comp=grid">Grid</a>
+        </div>
+
+        <div class="item">
+            <div class="ui header">Utility</div>
+            <a class="box hover" href="?comp=title">Title class</a>
+        </div>
+
+        <div class="item">
+            <div class="ui header">API</div>
+            <a class="box hover" href="?comp=toast_api">Toast api</a>
+        </div>
+
+        <div class="item">
+            <div class="footer">
+                Docs system made by BomberPlayz
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="ui card" style="width: 85%; height: available  ;">
+        <div class="content">
+            <div class="header ui">Documentation</div>
+        </div>
+        <div id="doc" class="content" style="overflow: auto;">
+
+        </div>
+    </div>
+</div>
+
+<script src="/Twenly/main.js"></script>
+<script>
+    $(document).ready(async function() {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        let fart = await fetch("./data/"+params.comp+".html")
+        let fuckfetch = await fart.text()
+        console.log(fuckfetch)
+        $("#doc")[0].innerHTML = fuckfetch
+            hljs.highlightAll();
+    })
+</script>
+
+</body>
+
+</html>

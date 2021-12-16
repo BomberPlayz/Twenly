@@ -1,0 +1,62 @@
+<h1>Progress bars</h1>
+<h2>With Twenly's progress bars, you can easily make good-looking progress bars!</h2>
+<div class="ui card" style="width: 100%">
+  <div class="title">Porgress bar types</div>
+  <div class="content">
+      <div class="ui progressbar primary">
+          <div class="bar smooth" style="width: 33%;"><p>33%</p></div>
+      </div>
+      <div class="ui progressbar secondary">
+          <div class="bar smooth" style="width: 33%;"><p>33%</p></div>
+      </div>
+      <div class="ui progressbar warning">
+          <div class="bar smooth" style="width: 33%;"><p>33%</p></div>
+      </div>
+      <div class="ui progressbar danger">
+          <div class="bar smooth" style="width: 33%;"><p>33%</p></div>
+      </div>
+      <div class="ui progressbar success">
+          <div class="bar smooth" style="width: 33%;"><p>33%</p></div>
+      </div>
+
+
+
+  </div>
+  <div class="content">
+        <pre class="card ui" style="width: 100%"><code class="language-html">
+&lt;div class=&quot;ui progressbar primary&quot;&gt;
+    &lt;div class=&quot;bar&quot; style=&quot;width: 33%;&quot;&gt;&lt;p&gt;33%&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui progressbar secondary&quot;&gt;
+    &lt;div class=&quot;bar&quot; style=&quot;width: 33%;&quot;&gt;&lt;p&gt;33%&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui progressbar warning&quot;&gt;
+    &lt;div class=&quot;bar&quot; style=&quot;width: 33%;&quot;&gt;&lt;p&gt;33%&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui progressbar danger&quot;&gt;
+    &lt;div class=&quot;bar&quot; style=&quot;width: 33%;&quot;&gt;&lt;p&gt;33%&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui progressbar success&quot;&gt;
+    &lt;div class=&quot;bar&quot; style=&quot;width: 33%;&quot;&gt;&lt;p&gt;33%&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+
+
+  </div>
+
+
+</div>
+<script>
+    setInterval(function() {
+        $(".ui.progressbar").setBarValue(Math.random()*100)
+
+    },1000)
+    $('body').toast({
+        title: "In development",
+        message: "Progress-bars are still in development! Please, except changes!",
+        class: "warning",
+        displayTime: 15000
+    })
+
+
+</script>
